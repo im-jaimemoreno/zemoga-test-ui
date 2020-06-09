@@ -38,7 +38,7 @@ npm start
 
 Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-* [IMPORTANT: The Fake Server use port 4210 this port must be free, please stop the proccess.]
+* [IMPORTANT: The Fake Server use port 4210 this port must be free]
 * [Note: Sometimes you need have administrator permissions to execute the previous steps.]
 
 ## Built With
