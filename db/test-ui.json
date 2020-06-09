@@ -1,0 +1,122 @@
+{
+  "rules-thumbs": [
+    {
+      "id": 1,
+      "name": "Pope Francis",
+      "datePublish": "20200608",
+      "area": "Religion",
+      "closingDays": "22",
+      "longDesc": "He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)",
+      "shortDesc": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+      "coverImage": "cover-pope-francis.jpg",
+      "cardThumbnail": "pope-francis.jpg",
+      "isCover": "true",
+      "likes": 1,
+      "dislikes": 1
+    },
+    {
+      "id": 2,
+      "name": "Kanye West",
+      "datePublish": "20200508",
+      "area": "Entertainment",
+      "closingDays": "30",
+      "longDesc": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+      "shortDesc": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+      "coverImage": "kanye-west.jpg",
+      "cardThumbnail": "kanye-west.jpg",
+      "isCover": "false",
+      "likes": 1,
+      "dislikes": 1
+    },
+    {
+      "id": 3,
+      "name": "Mark Zuckerberg",
+      "datePublish": "20190608",
+      "area": "Business",
+      "closingDays": "30",
+      "longDesc": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+      "shortDesc": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+      "coverImage": "mark-zuckerberg.jpg",
+      "cardThumbnail": "mark-zuckerberg.jpg",
+      "isCover": "false",
+      "likes": 29,
+      "dislikes": 97
+    },
+    {
+      "id": 4,
+      "name": "Cristina Fernández de Kirchner",
+      "datePublish": "20200607",
+      "area": "Politics",
+      "closingDays": "30",
+      "longDesc": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+      "shortDesc": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+      "coverImage": "cristina-kitchner.jpg",
+      "cardThumbnail": "cristina-kitchner.jpg",
+      "isCover": "false",
+      "likes": 42,
+      "dislikes": 65
+    },
+    {
+      "id": 5,
+      "name": "Malala Yousafzai",
+      "datePublish": "20200608",
+      "area": "Entertainment",
+      "closingDays": "30",
+      "longDesc": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+      "shortDesc": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+      "coverImage": "malala-yousafzai.jpg",
+      "cardThumbnail": "malala-yousafzai.jpg",
+      "isCover": "false",
+      "likes": 169,
+      "dislikes": 108
+    }
+  ],
+  "generals": [
+    {
+      "header": [
+        {
+          "name": "Past Trials",
+          "link": "page-blank"
+        },
+        {
+          "name": "How It Works",
+          "link": "page-blank"
+        }
+      ],
+      "authentication": [
+        {
+          "name": "Log In",
+          "link": "page-blank"
+        },
+        {
+          "name": "Sign Up",
+          "link": "page-blank"
+        }
+      ],
+      "footer": [
+        {
+          "name": "Terms and Conditions",
+          "link": "page-blank"
+        },
+        {
+          "name": "Privacy Policy",
+          "link": "page-blank"
+        },
+        {
+          "name": "Contact Us",
+          "link": "page-blank"
+        }
+      ],
+      "social": [
+        {
+          "name": "facebook",
+          "link": "https://www.facebook.com/"
+        },
+        {
+          "name": "twitter",
+          "link": "https://twitter.com/"
+        }
+      ]
+    }
+  ]
+}
