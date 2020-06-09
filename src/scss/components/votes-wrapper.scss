@@ -1,0 +1,197 @@
+.votes-wrapper{
+    h2{
+        font-weight: 300;
+        font-size: 40px;
+        color: rgb(51, 51, 51);
+        line-height: 1.2;
+        margin-bottom: 40px;
+    }
+    .vote-card{
+        display: flex;
+        position: relative;        
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+        width: 100%;
+        height: 612px;
+        max-width: 540px;
+        min-height: 612px;
+        margin-bottom: 62px;
+        &:nth-of-type() {
+            margin-left: auto;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0);
+            background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.61) 74%, rgba(0,0,0,0.61) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(37%, rgba(0,0,0,0)), color-stop(74%, rgba(0,0,0,0.61)), color-stop(100%, rgba(0,0,0,0.61)));
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.61) 74%, rgba(0,0,0,0.61) 100%);
+            background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.61) 74%, rgba(0,0,0,0.61) 100%);
+            background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.61) 74%, rgba(0,0,0,0.61) 100%);
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.61) 74%, rgba(0,0,0,0.61) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+            z-index: -1;
+        }
+        .public-figure{
+            padding: 36px 36px 92px 36px;
+            align-self: flex-end;
+            .name-public-figure{
+                position: relative;
+                font-size: 45px;
+                color: #fff;
+                line-height: 1;
+                margin-bottom: 5px;
+                z-index: 5;
+
+                &.like:before{
+                    content: "\e900";
+                    background-color: #1cbbb4e6;
+                }
+                &.dislike:before{
+                    content: "\e902";
+                    background-color: #ffad1de6;
+                }
+                &:before{
+                    content: "";
+                    font-family: $font-icon-test;
+                    font-size: 22px;
+                    padding: 5px 7px;
+                    position: absolute;
+                    top: 9px;
+                    left: -36px;
+                }
+            }
+            .publish-info{
+                color:#fff;
+                font-size: 14px;
+                line-height: 1;
+                margin-bottom: 18px;
+                &::first-letter{
+                    text-transform: capitalize;
+                }
+            }
+            .desc-public-figure{
+                font-size: 16px;
+                color: rgb(255, 255, 255);
+                line-height: 1;
+                margin-bottom: 18px;
+            }
+            .voting-box{
+                button{
+                    margin:0px 5px;
+                    &:first-child{
+                        margin-left: 0px;
+                    }
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                    &:last-child{
+                        margin:0px 5px;   
+                    }
+                }
+                [class*="icon-"]{
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 28px;
+                    color: white;
+                    height: 40px;
+                    &:hover{
+                        color: rgba(255, 255, 255, 0.85);
+                    }
+                }
+                .label-action{    
+                    margin:0px !important; 
+                    text-decoration: none;
+                    padding: 12px 1rem;
+                    line-height: 1;
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: 700;
+                    cursor: pointer;
+                    background-color: rgba(0, 0, 0, 0.15);
+                    border: 1px solid #fff;
+                    color: #fff;
+                    text-align: center;
+                    vertical-align: top;
+                    outline: unset;
+                    &:hover{
+                        background-color: rgba(255, 255, 255, 0.85);
+                        color: rgb(0, 0, 0);
+                        border: 1px solid #000;
+                    }
+                }
+            }
+        }
+        .vote-results{
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            [class*="icon-"]{
+                background-color: transparent;
+            }
+            .percent-bar{
+                color: #fff;
+                display: flex;
+                font-size: 30px;
+                line-height: 1;
+                vertical-align: middle;
+                height: 50px;
+                .number-percent{
+                    padding: 0 10px;
+                }
+                .vote-like{
+                    background: #1cbbb4e6;
+                    display: inline-flex;
+                    text-align: left;
+                    padding: 10px 15px;
+                    width: 50%;
+                    justify-content: flex-start;
+                    line-height: 1;
+                    vertical-align: middle;
+                }
+                .vote-dislike{
+                    background: #ffad1de6;
+                    display: inline-flex;
+                    text-align: right;
+                    padding: 10px 15px;
+                    width: 50%;
+                    justify-content: flex-end;
+                    line-height: 1;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        // @media only screen and (max-width: 600px) {
+        //     .vote-card {
+        //         &:nth-child(2n+2) {
+        //             margin-right: 0px;
+        //             margin-left: auto;
+        //         }
+        //     }
+        // }
+        
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        // @media only screen and (min-width: 600px) {
+        //     .vote-card {
+        //         &:nth-child(2n+2) {
+        //             margin: auto;
+        //         }
+        //     }
+        // }
+        
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            &:nth-child(2n+2) {
+                margin-right: 0px;
+                margin-left: auto;
+            }
+        } 
+        
+    }
+}

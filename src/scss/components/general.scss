@@ -1,0 +1,26 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    padding: 0px;
+}
+.icon-thumbs-up{
+    background: #1cbbb4e6;
+    color:#fff;
+    &:focus{
+        outline: 2px solid #fff;
+    }
+}
+.icon-thumbs-down{
+    background: #ffad1de6;
+    color: #fff;
+    &:focus{
+        outline: 2px solid #fff;
+    }
+}
+[class*="icon-thumbs-"]{
+    &:focus{
+        outline: 2px solid #fff;
+        z-index: 2;
+    }
+}

@@ -1,0 +1,35 @@
+/* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {
+// } 
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {
+// }
+@media (max-width: 992px) {
+    #header-rule-thumb .navbar .nav-item {
+        .nav-link {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+
+        }
+        &:last-child{
+            padding: 20px 0;
+            input{
+                height: 40px;
+                vertical-align: top;
+                width: 50%;
+            }
+        }
+    }
+    .input-search{
+        display: block;
+    }
+} 
+@media only screen and (min-width: 1200px) {
+    .votes-wrapper .row .col-vote:nth-child(2n+2) > .vote-card {
+        margin-left: auto;
+    }
+    .input-search{
+        display: none;
+    }
+}
