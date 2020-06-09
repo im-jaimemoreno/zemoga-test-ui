@@ -1,0 +1,15 @@
+<footer id="footer-rule-thumb">
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-5">
+                    <a class="footer-link" *ngFor="let item of menu" href="{{item.link}}">{{item.name}}</a>
+            </div>
+            <div class="col-5 follow-us">
+                <span class="label">Follow Us</span>
+                <a *ngFor="let item of socialLinks" class="item-link" target="_blank" href="{{item.link}}">
+                    <span class="icon-{{item.name}}"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
