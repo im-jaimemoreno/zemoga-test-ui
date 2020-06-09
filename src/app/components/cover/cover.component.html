@@ -1,0 +1,39 @@
+<section class="cover" style="background-image: url(./assets/images/{{coverPublicFigure.coverImage}})">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-10 my-auto">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="main-card-vote" >
+                            <div class="description-card">
+                                <h2 class="title-public-figure"><span>What's your opinion on</span>{{coverPublicFigure.name}}</h2>
+                                <p>{{coverPublicFigure.longDesc}}</p>
+                                <a href="page-blank" class="more-info">
+                                    <span class="icon-wikipedia"></span>  <span class="label">More information</span>
+                                </a>
+                                <h3 class="your-veridict">What's Your Veridict?</h3>
+                            </div>
+                            <div class="main-voting w-100 d-block">
+                                <div class="w-50 d-inline-flex">
+                                    <button class="icon-thumbs-up w-100"></button>
+                                </div>
+                                <div class="w-50 d-inline-flex">
+                                    <button class="icon-thumbs-down w-100"></button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row closing-box">
+        <div class="col-3 closing-in">
+            <span>CLOSING IN</span>
+        </div>
+        <div class="col-7 closing-days">
+            <span class="closing-day">{{coverPublicFigure.closingDays}}</span>
+            <span class="closing-label"> days</span>
+        </div>
+    </div>
+</section>
