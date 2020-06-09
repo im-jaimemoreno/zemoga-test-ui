@@ -1,0 +1,50 @@
+<section class="votes-wrapper">
+    <div class="container">
+        <h2>Votes</h2>
+        <div class="row justify-content-between">
+            <div class="col-vote col-md-5 col-sm-10" *ngFor="let person of allPublicFigures" >
+                <div class="vote-card" style="background-image: url(./assets/images/{{person.cardThumbnail}})">
+                    <div class="public-figure">
+                        <h3 class="name-public-figure like" [ngClass]="{'like': person.likes>=person.dislikes , 'dislike': person.likes<person.dislikes}">
+                            {{person.name}}
+                        </h3>
+                        <div class="publish-info">
+                            <strong class="date-publish">{{person.datePublish}}</strong> in {{person.area}}
+                        </div>
+                        <p class="desc-public-figure">
+                            {{person.shortDesc}}
+                        </p>
+                        <div class="voting-box">
+                            <span *ngIf="allStatePublicFigure[person.id-2].wasVoted; else votenow">
+                                <button class="icon-thumbs-up" (click)="voteForPerson(person.id, true)"></button>
+                                <button class="icon-thumbs-down" (click)="voteForPerson(person.id, false)"></button>
+                            </span>
+                            <ng-template #votenow>
+                                <button class="label-action" (click)="voteNow(person.id)" *ngIf="!allStatePublicFigure[person.id-2].voteAgain; else voteagain" >
+                                    Vote now 
+                                </button>
+                                <ng-template #voteagain>
+                                    <button class="label-action" (click)="voteNow(person.id)">
+                                        Vote again 
+                                    </button>
+                                </ng-template>
+                            </ng-template>
+                        </div>   
+                    </div>
+                    <div class="vote-results">
+                        <div class="percent-bar">
+                            <div class="vote-like" style="width:{{(person.likes/(person.dislikes+person.likes))*100 | number : '1.2-2'}}%;">
+                                <span class="icon-thumbs-up"></span>
+                                <span class="number-percent">{{(person.likes/(person.dislikes+person.likes))*100 | number : '1.0-1'}}%</span>
+                            </div>
+                            <div class="vote-dislike" style="width:{{(person.dislikes/(person.dislikes+person.likes))*100 | number : '1.2-2'}}%;">
+                                <span class="number-percent">{{(person.dislikes/(person.dislikes+person.likes))*100 | number : '1.0-1'}}%</span>
+                                <span class="icon-thumbs-down"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
