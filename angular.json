@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "zemoga-test-ui"
+    }
+  },
+  "defaultProject": "zemoga-test-ui",
+  "cli": {
+    "analytics": "706ed554-ba80-45d9-822d-cc4ed031d056"
+  }
 }
