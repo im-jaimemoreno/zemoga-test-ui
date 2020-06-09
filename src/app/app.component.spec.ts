@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'zemoga-test-ui'`, () => {
+  it(`should have as title 'zmg'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('zemoga-test-ui');
+    expect(app.title).toEqual('zmg');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('zemoga-test-ui app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('zmg app is running!');
   });
 });

@@ -1,0 +1,44 @@
+#notification-card{
+    margin-bottom: 40px;
+    .container{
+        background:#ebebeb;
+        padding: 30px;
+        .title-noti{
+            display: inline-block;
+            vertical-align: middle;
+            margin: auto 10px auto 0;
+            .speak-out{
+                display: block;
+                font-size: 22px;
+                line-height: 1;
+                color: #333333;
+                white-space: nowrap;
+            }
+            .be-counted{
+                font-size: 37px;
+                line-height: 1;
+                white-space: nowrap;
+            }
+        }
+        .description-noti{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 15px;
+            color: #333333;
+            margin: auto 0;
+        }
+        .btn-close{
+            cursor: pointer;
+            color: #333333;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: right;
+            margin: auto 0 auto 15px;
+            .icon-equis{
+                font-size: 24px;
+                display: block;               
+            }
+            &:hover{text-decoration: none;}
+        }
+    }
+}

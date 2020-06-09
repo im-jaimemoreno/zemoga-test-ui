@@ -1,0 +1,31 @@
+<header id="header-rule-thumb" (scroll)="onWindowScroll($event);">
+    <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1>Rule of Thumb.</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-md-auto">
+                    <li class="nav-item" *ngFor="let item of menu">
+                        <a class="nav-link" href="/{{item.link}}">{{item.name}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">
+                            <a class="d-inline" href="{{authLinks[0].link}}">{{authLinks[0].name}}</a> / <a class="d-inline" href="{{authLinks[1].link}}">{{authLinks[1].name}}</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <input class="d-inline-block d-lg-none" type="text" placeholder="Search...">
+                        <a class="d-inline-block d-lg-block" href="#" class="link-search">
+                            <span class="icon-search"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+

@@ -1,0 +1,30 @@
+#suggestion-card{
+    .container{
+        background: url(./assets/images/bg-suggestions.jpg) center no-repeat;
+        background-size: cover;
+        padding: 20px 26px;
+        h4{
+            font-weight: 300;
+            font-size: 30px;
+            vertical-align: middle;
+            margin-bottom: unset;
+            line-height: 1;
+            margin: auto 0;
+        }
+        .submit-name{
+            text-decoration: none;
+            padding: 12px 1rem;
+            line-height: 1;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            background-color: transparent;
+            border: 2px solid #000;
+            color: #000;
+            text-align: center;
+            vertical-align: top;
+            outline: unset;
+        }
+    }
+}
